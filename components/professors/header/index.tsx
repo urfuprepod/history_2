@@ -4,7 +4,7 @@ import { Badge } from "@/shared";
 
 const ProfessrosHeader = () => {
     return (
-        <section className="relative h-[600px] overflow-hidden">
+        <section className="relative h-[700px] overflow-hidden">
             <div className="flex flex-col gap-3">
                 <Badge>Преподаватели</Badge>
                 <div className="grid grid-cols-2 gap-5">
