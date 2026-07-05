@@ -141,3 +141,14 @@ export const PROFESSORS: IProfessor[] = [
         photo: "Chemyakin",
     },
 ];
+
+export const HIDDEN_MOBILE_FLEX = "hidden md:flex";
+export const HIDDEN_MOBILE_BLOCK = "hidden md:block";
+export const HIDDEN_DESKTOP_FLEX = "flex md:hidden";
+export const HIDDEN_DESKTOP_BLOCK = "block md:hidden";
+
+export const STATISTIC = [
+    { icon: "Armchair", title: "15", description: "бюджетных мест" },
+    { icon: "BriefcaseBusiness", title: "5", description: "контрактных мест" },
+    { icon: "CalendarDays", title: "2", description: "года — срок обучения" },
+];

@@ -1,4 +1,7 @@
+import { HIDDEN_MOBILE_FLEX } from "@/constants";
+import clsx from "clsx";
 import Image from "next/image";
+import HamburgerMenu from "../HamburgerMenu";
 
 const LINKS = [
     { title: "О программе", link: "/" },
@@ -7,7 +10,7 @@ const LINKS = [
 
 const Header = () => {
     return (
-        <header className="flex justify-between items-center bg-white rounded-lg shadow-xs py-3 px-8 sticky top-0 left-0 -ml-[30px] -mr-[30px] z-333">
+        <header className="flex justify-between items-center bg-white rounded-lg shadow-xs py-3 px-4 md:px-8 sticky top-0 left-0 -ml-[15px] -mr-[15px] md:-ml-[30px] md:-mr-[30px] z-333">
             <Image
                 src={`/logo.svg`}
                 width={140}
@@ -16,7 +19,8 @@ const Header = () => {
                 className="w-[140px] h-[82px] shrink-0"
             />
 
-            <div className="flex gap-5 items-center">
+            <HamburgerMenu />
+            <div className={clsx("gap-5 items-center", HIDDEN_MOBILE_FLEX)}>
                 {/* {LINKS.map(({ title, link }) => (
                     <Link key={link} url={link}>
                         {title}

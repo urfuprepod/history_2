@@ -3,13 +3,21 @@ import { Icons } from "../Icons";
 
 const Footer = () => {
     return (
-        <section className="relative overflow-hidden rounded-[48px] px-10 py-4 bg-gradient-to-b from-[#f6f8ff] to-[#eef2ff]">
-            <div className="flex flex-col gap-8">
-                <h1 className="text-heading uppercase">
-                    Наши <br /> <span className="text-primary">контакты</span>
-                </h1>
+        <section className="relative overflow-hidden rounded-[48px] px-5 md:px-10 py-4 bg-gradient-to-b from-[#f6f8ff] to-[#eef2ff]">
+            <div className="flex flex-col gap-4 md:gap-8">
+                <div className="flex gap-6 flex-col md:flex-row items-center">
+                    <h1 className="text-heading uppercase text-center md:text-left">
+                        Наши <br />{" "}
+                        <span className="text-primary">контакты</span>
+                    </h1>
 
-                <div className="flex gap-5">
+                    <div className="flex font-bold gap-1 text-primary">
+                        #фондпотанина
+                        #уральскийгуманитарныйинститут
+                    </div>
+                </div>
+
+                <div className="flex gap-5 ">
                     <Card className="gap-4">
                         <div className="flex gap-4 items-center">
                             <Icons.MapPinHouse color="#4361ee" />
