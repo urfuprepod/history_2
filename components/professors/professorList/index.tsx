@@ -36,7 +36,7 @@ const settingsMobile = {
 
 const ProfessorList = () => {
     return (
-        <section className="w-[90vw]">
+        <section className="w-[90vw] md:w-auto">
             <div className={HIDDEN_MOBILE_BLOCK}>
                 {" "}
                 <Slider {...settings}>
