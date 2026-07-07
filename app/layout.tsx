@@ -28,6 +28,9 @@ export default function RootLayout({
             lang="ru"
             className={cn(manrope.variable, "font-sans", inter.variable)}
         >
+            <head>
+                <link rel="preload" as="image" href="/public/hero.png" />
+            </head>
             <body>
                 <div className="flex flex-col gap-12 justify-between">
                     <Header />
