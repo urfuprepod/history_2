@@ -1,4 +1,5 @@
 "use client";
+import { HIDDEN_MOBILE_BLOCK } from "@/constants";
 import { useEffect, useRef } from "react";
 
 interface ColorRGB {
@@ -1640,6 +1641,7 @@ export default function SplashCursor({
                 width: "100%",
                 height: "100%",
             }}
+            className={HIDDEN_MOBILE_BLOCK}
         >
             <canvas
                 ref={canvasRef}

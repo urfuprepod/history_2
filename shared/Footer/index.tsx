@@ -17,8 +17,8 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="flex gap-5 ">
-                    <Card className="gap-4">
+                <div className="flex gap-5 overflow-x-auto">
+                    <Card className="gap-4 w-full md:w-auto shrink-0">
                         <div className="flex gap-4 items-center">
                             <Icons.MapPinHouse color="#4361ee" />
                             <div className="flex flex-col gap-1">
@@ -62,7 +62,7 @@ const Footer = () => {
                         </div>
                     </Card>
 
-                    <Card className="gap-4">
+                    <Card className="gap-4 w-full md:w-auto shrink-0">
                         <div className="flex gap-4 items-center">
                             <Icons.User color="#4361ee" />
                             <div className="flex flex-col">

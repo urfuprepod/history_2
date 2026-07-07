@@ -152,3 +152,8 @@ export const STATISTIC = [
     { icon: "BriefcaseBusiness", title: "5", description: "контрактных мест" },
     { icon: "CalendarDays", title: "2", description: "года — срок обучения" },
 ];
+
+export const LINKS = [
+    { name: "Главная", link: "/" },
+    { name: "Преподаватели", link: "/professors" },
+];

@@ -2,7 +2,11 @@
 
 import Slider from "react-slick";
 import Professor from "../professor";
-import { PROFESSORS } from "@/constants";
+import {
+    HIDDEN_DESKTOP_BLOCK,
+    HIDDEN_MOBILE_BLOCK,
+    PROFESSORS,
+} from "@/constants";
 
 const settings = {
     dots: true,
@@ -15,30 +19,41 @@ const settings = {
     autoplay: true, // Автопрокрутка
     autoplaySpeed: 3000, // Время показа слайда (мс)
     pauseOnHover: true, // Остановить при наведении (по умолчанию true)
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                rows: 2,
-            },
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                rows: 1,
-            },
-        },
-    ],
+};
+
+const settingsMobile = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    rows: 2, // Было 3, стало 4 карточки
+    autoplay: true, // Автопрокрутка
+    autoplaySpeed: 10000, // Время показа слайда (мс)
+    pauseOnHover: true, // Остановить при наведении (по умолчанию true)
 };
 
 const ProfessorList = () => {
     return (
-        <section>
-            <Slider {...settings}>
-                {PROFESSORS.map((professor) => (
-                    <Professor key={professor.name} professor={professor} />
-                ))}
-            </Slider>
+        <section className="w-[90vw]">
+            <div className={HIDDEN_MOBILE_BLOCK}>
+                {" "}
+                <Slider {...settings}>
+                    {PROFESSORS.map((professor) => (
+                        <Professor key={professor.name} professor={professor} />
+                    ))}
+                </Slider>
+            </div>
+
+            <div className={HIDDEN_DESKTOP_BLOCK}>
+                {" "}
+                <Slider {...settingsMobile}>
+                    {PROFESSORS.map((professor) => (
+                        <Professor key={professor.name} professor={professor} />
+                    ))}
+                </Slider>
+            </div>
         </section>
     );
 };

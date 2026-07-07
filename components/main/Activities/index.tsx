@@ -31,7 +31,7 @@ const ACTIVITIES = [
 const Activities = () => {
     return (
         <section className="flex flex-col gap-6 mt-12">
-            <div className="flex justify-between gap-5 [&>*]:flex-[1_1_50%]">
+            <div className="flex flex-col justify-between gap-5 md:flex-row md:[&>*]:flex-[1_1_50%]">
                 <h2 className="text-sub-heading">Наша деятельность</h2>
 
                 <p className="text-paragraph">
@@ -41,7 +41,7 @@ const Activities = () => {
                 </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {ACTIVITIES.map((activity, id) => (
                     <ActivityCard key={id} {...activity} />
                 ))}

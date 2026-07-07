@@ -1,6 +1,10 @@
 "use client";
 
-import { HIDDEN_DESKTOP_BLOCK, STATISTIC } from "@/constants";
+import {
+    HIDDEN_DESKTOP_BLOCK,
+    HIDDEN_MOBILE_BLOCK,
+    STATISTIC,
+} from "@/constants";
 import StatisticCard from "../StatisticCard";
 import Slider from "react-slick";
 

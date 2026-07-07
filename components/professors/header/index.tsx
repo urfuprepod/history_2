@@ -1,13 +1,14 @@
-
+import { HIDDEN_MOBILE_BLOCK } from "@/constants";
 import SplashCursor from "../../SplashCursor";
 import { Badge } from "@/shared";
+import clsx from "clsx";
 
 const ProfessrosHeader = () => {
     return (
-        <section className="relative h-[700px] overflow-hidden">
+        <section className="relative md:h-[700px] overflow-hidden">
             <div className="flex flex-col gap-3">
                 <Badge>Преподаватели</Badge>
-                <div className="grid grid-cols-2 gap-5">
+                <div className="grid grid-col-1 md:grid-cols-2 gap-5">
                     <div className="flex flex-col gap-3">
                         <h1 className="text-heading uppercase">
                             Наши преподаватели
@@ -41,7 +42,12 @@ const ProfessrosHeader = () => {
                         </p>
                     </div>
 
-                    <div className="bg-[url('/hero.png')] bg-no-repeat bg-top bg-cover" />
+                    <div
+                        className={clsx(
+                            HIDDEN_MOBILE_BLOCK,
+                            "bg-[url('/hero.png')] bg-no-repeat bg-top bg-cover",
+                        )}
+                    />
                 </div>
             </div>
 

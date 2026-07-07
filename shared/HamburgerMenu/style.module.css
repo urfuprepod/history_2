@@ -36,6 +36,9 @@
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     transform: scale(0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .nav-wrapper {
     position: relative;
@@ -55,12 +58,6 @@
     background-color: white;
     left: -0.5em;
     transition: all 0.2s ease-in-out;
-}
-.nav a:hover {
-    color: white;
-}
-.nav a:hover:before {
-    height: 100%;
 }
 
 /**

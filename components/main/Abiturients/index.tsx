@@ -6,16 +6,16 @@ import { Accordion, AccordionItem } from "@szhsin/react-accordion";
 
 const Abiturients = () => {
     return (
-        <section className="flex flex-col gap-6 bg-white m-[-20px] p-4 rounded-md w-full">
+        <section className="flex flex-col gap-6 bg-white md:m-[-20px] p-4 rounded-md w-full">
             <h2 className="text-sub-heading">
                 Информация для будущих выпускников
             </h2>
 
-            <Accordion className="flex gap-4 [&>*]:flex-[1_1_33.3%] items-start">
+            <Accordion className="flex flex-col md:flex-row gap-4 [&>*]:flex-[1_1_33.3%] items-start">
                 <AccordionItem
                     header={({ state }) => (
                         <div className="flex items-center justify-between w-full">
-                            <span className="text-strong text-primary">
+                            <span className="text-strong text-primary max-w-[70%]">
                                 Дополнительные преимущества
                             </span>
 
@@ -24,7 +24,7 @@ const Abiturients = () => {
                             />
                         </div>
                     )}
-                    className=" overflow-hidden rounded-[32px] border border-border bg-white transition hover:-translate-y-[2px]"
+                    className="overflow-hidden rounded-[32px] border border-border bg-white transition hover:-translate-y-[2px]"
                     buttonProps={{
                         className: `w-full px-8 py-6 flex items-center justify-between text-left  cursor-pointer`,
                     }}
@@ -72,7 +72,7 @@ const Abiturients = () => {
                     }}
                     header={({ state }) => (
                         <div className="flex items-center justify-between w-full">
-                            <span className="text-strong text-primary">
+                            <span className="text-strong text-primary max-w-[70%]">
                                 Сферы профессиональной деятельности выпускника
                             </span>
 
@@ -132,7 +132,7 @@ const Abiturients = () => {
                     }}
                     header={({ state }) => (
                         <div className="flex items-center justify-between w-full">
-                            <span className="text-strong text-primary">
+                            <span className="text-strong text-primary max-w-[70%]">
                                 Где могут работать наши выпускники
                             </span>
 

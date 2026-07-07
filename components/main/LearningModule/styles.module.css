@@ -1,0 +1,4 @@
+/* Если чекбокс с id="list" не отмечен → скрываем грид */
+.header:has(.list:checked) + .cards {
+  display: none;
+}

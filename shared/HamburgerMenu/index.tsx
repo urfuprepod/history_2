@@ -1,7 +1,14 @@
+"use client";
+
 import clsx from "clsx";
 import styles from "./style.module.css";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { LINKS } from "@/constants";
 
 const HamburgerMenu = () => {
+    const pathname = usePathname();
+
     return (
         <>
             <input
@@ -16,13 +23,22 @@ const HamburgerMenu = () => {
                 <div className={styles["bottom-bun"]} />
             </label>
 
-            <nav className={styles.nav}>
-                {/* {LINKS.map(({ title, link }) => (
-                                    <Link key={link} url={link}>
-                                        {title}
-                                    </Link>
-                                ))} */}
-            </nav>
+            <div className={styles.nav}>
+                <nav className="flex flex-col items-center gap-4">
+                    {LINKS.map(({ name, link }) => (
+                        <Link
+                            key={link}
+                            href={link}
+                            className={clsx("text-strong text-primary pbe-2", {
+                                "border-b-3 border-b-primary":
+                                    pathname === link,
+                            })}
+                        >
+                            {name}
+                        </Link>
+                    ))}
+                </nav>
+            </div>
         </>
     );
 };

@@ -1,26 +1,27 @@
 "use client";
 
 import { Icons } from "@/shared/Icons";
-import { useState } from "react";
+import { useId, useState } from "react";
+import styles from '../styles.module.css'
+import clsx from "clsx";
 
 const ShowHideButton = () => {
     const [isShowed, setIsShowed] = useState<boolean>(false);
+    const id = useId();
 
     return (
         <>
             <input
                 type="checkbox"
+                className={clsx("hidden", styles.list)}
                 onChange={() => setIsShowed((prev) => !prev)}
-                id="list"
+                id={id}
             />
-            <label htmlFor="list">
+            <label htmlFor={id}>
                 {isShowed ? (
-                    <Icons.Eye size={16} color={"var(--color-primary-light)"} />
+                    <Icons.EyeOff size={24} color={"black"} />
                 ) : (
-                    <Icons.EyeOff
-                        size={16}
-                        color={"var(--color-primary-light)"}
-                    />
+                    <Icons.Eye size={24} color={"black"} />
                 )}
             </label>
         </>

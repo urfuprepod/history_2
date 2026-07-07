@@ -11,14 +11,14 @@ const Professor: FC<Props> = ({ professor }) => {
     const { name, status, courses, photo } = professor;
 
     return (
-        <Card className="grid grid-cols-[1fr_5%_1fr] gap-2 mb-5">
+        <Card className="grid grid-cols-1 md:grid-cols-[1fr_5%_1fr] gap-2 mb-5">
             <div className="flex gap-5 items-center">
                 <Image
                     src={`/professors/${photo}.jpg`}
                     alt={name}
                     width={200}
                     height={200}
-                    className="w-[200px] h-[200px] rounded-full object-cover shrink-0"
+                    className="md:w-[200px] md:h-[200px] w-[100px] h-[100px] rounded-full object-cover shrink-0"
                 />
                 <h3 className="text-sub-heading">
                     {name.split(" ").map((el, id) => (
