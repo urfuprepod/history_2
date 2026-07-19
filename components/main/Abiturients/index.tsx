@@ -6,7 +6,7 @@ import { Accordion, AccordionItem } from "@szhsin/react-accordion";
 
 const Abiturients = () => {
     return (
-        <section className="flex flex-col gap-6 bg-white md:m-[-20px] p-4 rounded-md w-full">
+        <section className="flex flex-col gap-6 bg-white p-4 rounded-md w-full">
             <h2 className="text-sub-heading">
                 Информация для будущих выпускников
             </h2>

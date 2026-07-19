@@ -21,7 +21,7 @@ const Header = () => {
             />
 
             <HamburgerMenu />
-            <div className={clsx("gap-5 items-center", HIDDEN_MOBILE_FLEX)}>
+            <nav className={clsx("gap-5 items-center", HIDDEN_MOBILE_FLEX)}>
                 {LINKS.map(({ name, link }) => (
                     <Link
                         key={link}
@@ -37,7 +37,7 @@ const Header = () => {
                         {name}
                     </Link>
                 ))}
-            </div>
+            </nav>
         </header>
     );
 };

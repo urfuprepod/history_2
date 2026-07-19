@@ -110,7 +110,7 @@ const MODULES = [
 
 const Learning = () => {
     return (
-        <section className="flex flex-col gap-6 bg-white m-0 md:m-[-20px] p-4 rounded-md ">
+        <section className="flex flex-col gap-6 bg-white m-0 p-4 rounded-md ">
             <div className="flex flex-col md:flex-row justify-between gap-5 [&>*]:flex-[1_1_50%]">
                 <div className="flex flex-col gap-3 items-start">
                     <Badge>Учебные модули</Badge>

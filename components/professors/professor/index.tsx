@@ -8,41 +8,48 @@ type Props = {
 };
 
 const Professor: FC<Props> = ({ professor }) => {
-    const { name, status, courses, photo } = professor;
+    const { name, status, courses, photo, link } = professor;
 
     return (
-        <Card className="grid grid-cols-1 md:grid-cols-[1fr_5%_1fr] gap-2 mb-5">
-            <div className="flex gap-5 items-center">
-                <Image
-                    src={`/professors/${photo}.jpg`}
-                    alt={name}
-                    width={200}
-                    height={200}
-                    className="md:w-[200px] md:h-[200px] w-[100px] h-[100px] rounded-full object-cover shrink-0"
-                />
-                <h3 className="text-sub-heading">
-                    {name.split(" ").map((el, id) => (
-                        <React.Fragment key={id}>
-                            <span>{el}</span>
-                            <br />
-                        </React.Fragment>
-                    ))}
-                </h3>
-            </div>
-
-            <Divider isVertical />
-
-            <div className="flex flex-col gap-7">
-                <p className="text-strong">{status}</p>
-
-                <div>
-                    <span className="text-strong">Курсы:</span>{" "}
-                    <span className="text-small text-text-secondary">
-                        {courses.join(", ")}
-                    </span>
+        <a
+            className="cursor-pointer"
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <Card className="grid grid-cols-1 md:grid-cols-[1fr_5%_1fr] gap-2 mb-5">
+                <div className="flex gap-5 items-center">
+                    <Image
+                        src={`/professors/${photo}.jpg`}
+                        alt={[name, status].join(', ')}
+                        width={200}
+                        height={200}
+                        className="md:w-[200px] md:h-[200px] w-[100px] h-[100px] rounded-full object-cover shrink-0"
+                    />
+                    <h3 className="text-sub-heading">
+                        {name.split(" ").map((el, id) => (
+                            <React.Fragment key={id}>
+                                <span>{el}</span>
+                                <br />
+                            </React.Fragment>
+                        ))}
+                    </h3>
                 </div>
-            </div>
-        </Card>
+
+                <Divider isVertical />
+
+                <div className="flex flex-col gap-7">
+                    <p className="text-strong">{status}</p>
+
+                    <div>
+                        <span className="text-strong">Курсы:</span>{" "}
+                        <span className="text-small text-text-secondary">
+                            {courses.join(", ")}
+                        </span>
+                    </div>
+                </div>
+            </Card>
+        </a>
     );
 };
 

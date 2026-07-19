@@ -9,6 +9,7 @@ export const PROFESSORS: IProfessor[] = [
             "«Концепция «особого пути» в истории Германии и России: сравнительный анализ»",
         ],
         photo: "Baranov",
+        link: "https://urfu.ru/ru/about/personal-pages/person/nikolaibaranov",
     },
     {
         name: "Бут Юлия Евгеньевна",
@@ -19,6 +20,7 @@ export const PROFESSORS: IProfessor[] = [
             "«История университетов, 1200–1900 гг.»",
         ],
         photo: "But",
+        link: "https://urfu.ru/ru/about/personal-pages/person/j.e.komleva",
     },
 
     {
@@ -30,6 +32,7 @@ export const PROFESSORS: IProfessor[] = [
             "«Практика перевода: история и метод»",
         ],
         photo: "VVV",
+        link: "https://urfu.ru/ru/about/personal-pages/person/veronika.vysokova",
     },
 
     {
@@ -39,6 +42,7 @@ export const PROFESSORS: IProfessor[] = [
             "«От согласия к Пакту: франко-русские и франко-советские отношения в 1890-1930-е гг.»",
         ],
         photo: "Galkina",
+        link: "https://hist-urgi.urfu.ru/ru/nash-fakultet/kafedry/kafedra-novoi-i-noveishei-istorii/sotrudniki-kafedry-novoi-i-noveishei-istorii/persons/content/4806",
     },
 
     {
@@ -46,6 +50,7 @@ export const PROFESSORS: IProfessor[] = [
         status: "Кандидат исторических наук, доцент кафедры Новой и новейшей истории",
         courses: ["«Балканы в контексте геополитических трансформаций»"],
         photo: "Gorodetskaya",
+        link: "https://urfu.ru/ru/about/personal-pages/person/n.b.gorodetckaia",
     },
 
     {
@@ -53,6 +58,7 @@ export const PROFESSORS: IProfessor[] = [
         status: "Кандидат исторических наук, доцент кафедры истории Древнего мира и Средних веков",
         courses: ["«Всемирная история: метод, проблемы, перспективы»"],
         photo: "Zhigalova",
+        link: "https://urfu.ru/ru/about/personal-pages/person/ne.zhigalova",
     },
 
     {
@@ -63,6 +69,7 @@ export const PROFESSORS: IProfessor[] = [
             "«Россия в процессах интернационализации и интеграции»",
         ],
         photo: "Zapariy",
+        link: "https://urfu.ru/ru/about/personal-pages/person/zapary.iulia",
     },
 
     {
@@ -70,6 +77,7 @@ export const PROFESSORS: IProfessor[] = [
         status: "Доктор исторических наук, профессор кафедры Новой и новейшей истории",
         courses: ["«Всемирная история: метод, проблемы, перспективы»"],
         photo: "Zemtsov",
+        link: "https://urfu.ru/ru/about/personal-pages/person/v.n.zemtcov",
     },
 
     {
@@ -77,6 +85,7 @@ export const PROFESSORS: IProfessor[] = [
         status: "Кандидат исторических наук, профессор кафедры Новой и новейшей истории",
         courses: ["«История британского парламентаризма»"],
         photo: "Kruchinina",
+        link: "https://urfu.ru/ru/about/personal-pages/person/n.a.kruchinina",
     },
 
     {
@@ -84,6 +93,7 @@ export const PROFESSORS: IProfessor[] = [
         status: "Доктор исторических наук, заведующая кафедрой истории Древнего мира и Средних веков",
         courses: ["«История университетов, 1200–1900 гг.»"],
         photo: "Kusch",
+        link: "https://urfu.ru/ru/about/personal-pages/person/tatiana.kushch",
     },
 
     {
@@ -94,6 +104,7 @@ export const PROFESSORS: IProfessor[] = [
             "«Византинизм в России»",
         ],
         photo: "Makarov",
+        link: "https://sciencedata.urfu.ru/portal/ru/persons/--(2491ca11-d717-4878-9d02-4856ad01610e)/publications.html",
     },
 
     {
@@ -104,6 +115,7 @@ export const PROFESSORS: IProfessor[] = [
             "«Крестовые походы: религиозно-военный конфликт между Западом и Востоком»",
         ],
         photo: "Mokhov",
+        link: "https://urfu.ru/ru/about/personal-pages/person/a.s.mokhov",
     },
 
     {
@@ -111,6 +123,7 @@ export const PROFESSORS: IProfessor[] = [
         status: "Кандидат исторических наук, доцент кафедры истории Древнего мира и Средних веков",
         courses: ["«Святость в средние века»", "«Русско-византийские связи»"],
         photo: "Okhlupina",
+        link: "https://urfu.ru/ru/about/personal-pages/person/irina.okhlupina",
     },
 
     {
@@ -121,6 +134,7 @@ export const PROFESSORS: IProfessor[] = [
             "«История схизмы и униатских соборов в Средние века»",
         ],
         photo: "Pashkin",
+        link: "https://sciencedata.urfu.ru/portal/ru/persons/--(d6c4f994-5c2d-4f92-b3c8-f38e471efd91)/activities.html",
     },
 
     {
@@ -132,6 +146,7 @@ export const PROFESSORS: IProfessor[] = [
             "«Россия и Китай в XIX —XXI вв.: межгосударственное и межцивилизационное взаимодействие»",
         ],
         photo: "Smirnov",
+        link: "https://urfu.ru/ru/about/personal-pages/person/s.v.smirnov",
     },
 
     {
@@ -139,6 +154,7 @@ export const PROFESSORS: IProfessor[] = [
         status: "Кандидат исторических наук, доцент кафедры Новой и новейшей истории",
         courses: ["«Постколониальные исследования: методы и перспективы»"],
         photo: "Chemyakin",
+        link: "https://urfu.ru/ru/about/personal-pages/person/evgeny.chemiakin",
     },
 ];
 

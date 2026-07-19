@@ -1,6 +1,7 @@
 export interface IProfessor {
-    name: string
-    status: string
-    courses: string[]
-    photo: string
+    name: string;
+    status: string;
+    courses: string[];
+    photo: string;
+    link: string;
 }
