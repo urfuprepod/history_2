@@ -2,7 +2,7 @@
 
 import { Icons } from "@/shared/Icons";
 import { useId, useState } from "react";
-import styles from '../styles.module.css'
+import styles from "../styles.module.css";
 import clsx from "clsx";
 
 const ShowHideButton = () => {
@@ -17,7 +17,10 @@ const ShowHideButton = () => {
                 onChange={() => setIsShowed((prev) => !prev)}
                 id={id}
             />
-            <label htmlFor={id}>
+            <label
+                htmlFor={id}
+                className="cursor-pointer hover:scale-110 transition-transform duration-200"
+            >
                 {isShowed ? (
                     <Icons.EyeOff size={24} color={"black"} />
                 ) : (

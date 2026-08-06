@@ -11,7 +11,7 @@ const Header = () => {
     const pathname = usePathname();
 
     return (
-        <header className="flex justify-between items-center bg-white rounded-lg shadow-xs py-3 px-4 md:px-8 sticky top-0 left-0 -ml-[15px] -mr-[15px] md:-ml-[30px] md:-mr-[30px] z-333">
+        <header className="flex justify-between items-center bg-white rounded-lg shadow-xs py-3 px-4 md:px-8 sticky top-0 left-0 -ml-[15px] -mr-[15px] md:-ml-[30px] md:-mr-[30px] z-200">
             <Image
                 src={`/logo.svg`}
                 width={140}
