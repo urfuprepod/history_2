@@ -10,8 +10,6 @@ type Props = {
     discipline: Required<Discipline>;
 };
 
-const isMobile = window.innerWidth <= 768;
-
 const customStyles = {
     content: {
         top: "50%",
@@ -20,9 +18,9 @@ const customStyles = {
         bottom: "auto",
         marginRight: "-50%",
         transform: "translate(-50%, -50%)",
-        maxWidth: isMobile ? "100vw" : "85vw",
+        maxWidth: "85vw",
         zIndex: 334,
-        maxHeight: isMobile ? "100vh" : "85vh",
+        maxHeight: "85vh",
         padding: "2rem",
     },
     overlay: {
@@ -33,7 +31,7 @@ const customStyles = {
 const DisciplineModal: FC<Props> = ({ discipline }) => {
     const { content, title } = discipline;
     const [isOpen, setIsOpen] = useState(false);
-    const id = useId(); 
+    const id = useId();
 
     return (
         <>
