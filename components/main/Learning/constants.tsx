@@ -28,6 +28,36 @@ export const MODULES: LearninModule[] = [
             {
                 title: "Практика преподавания профильных дисциплин в высшей школе",
                 icon: "GraduationCap",
+            },
+        ],
+    },
+
+    {
+        title: "Вариативная часть",
+        disciplines: [
+            {
+                title: "Технологии научной и проектной деятельности",
+                icon: "Rocket",
+            },
+
+            {
+                title: "Методология всемирной истории",
+                icon: "Globe",
+            },
+
+            {
+                title: "Всемирная история: проблемы и методы",
+                icon: "NotepadText",
+            },
+
+            {
+                title: "Всемирная история: основы практического исследования",
+                icon: "FileChartLine",
+            },
+
+            {
+                title: "Практика перевода: история и метод",
+                icon: "SearchSlash",
                 content: (
                     <div className="flex flex-col gap-4">
                         <PointWithValue
@@ -137,36 +167,6 @@ export const MODULES: LearninModule[] = [
                         </div>
                     </div>
                 ),
-            },
-        ],
-    },
-
-    {
-        title: "Вариативная часть",
-        disciplines: [
-            {
-                title: "Технологии научной и проектной деятельности",
-                icon: "Rocket",
-            },
-
-            {
-                title: "Методология всемирной истории",
-                icon: "Globe",
-            },
-
-            {
-                title: "Всемирная история: проблемы и методы",
-                icon: "NotepadText",
-            },
-
-            {
-                title: "Всемирная история: основы практического исследования",
-                icon: "FileChartLine",
-            },
-
-            {
-                title: "Практика перевода: история и метод",
-                icon: "SearchSlash",
             },
 
             {
