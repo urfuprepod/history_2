@@ -33,7 +33,7 @@ const customStyles = {
 const DisciplineModal: FC<Props> = ({ discipline }) => {
     const { content, title } = discipline;
     const [isOpen, setIsOpen] = useState(false);
-    const id = useId();
+    const id = useId(); 
 
     return (
         <>
