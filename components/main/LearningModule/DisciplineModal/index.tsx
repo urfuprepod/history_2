@@ -1,13 +1,16 @@
 "use client";
 
-import { FC, useId, useState } from "react";
-import { Discipline } from "../../Learning/types";
-import { GhostButton, Tooltip } from "@/shared";
+import { FC, useId } from "react";
+import { GhostButton } from "@/shared";
 import { Icons } from "@/shared/Icons";
 import Modal from "react-modal";
 
 type Props = {
-    discipline: Required<Discipline>;
+    content: React.ReactNode;
+    title: string;
+    isOpen: boolean;
+    onClose: () => void;
+    id?: string
 };
 
 const customStyles = {
@@ -20,50 +23,38 @@ const customStyles = {
         transform: "translate(-50%, -50%)",
         maxWidth: "85vw",
         zIndex: 334,
-        maxHeight: "85vh",
+        maxHeight: "88vh",
         padding: "2rem",
+        minHeight: '20rem'
     },
     overlay: {
         zIndex: 1000,
     },
 };
 
-const DisciplineModal: FC<Props> = ({ discipline }) => {
-    const { content, title } = discipline;
-    const [isOpen, setIsOpen] = useState(false);
-    const id = useId();
+const DisciplineModal: FC<Props> = ({ title, content, onClose, isOpen, id }) => {
+    const uuid = useId();
 
     return (
-        <>
-            <GhostButton
-                onClick={() => setIsOpen(true)}
-                className="absolute right-0 bottom-0 -translate-x-1/2 -translate-y-1/2"
-            >
-                <Icons.Glasses size={18} color="#4361ee" />
-            </GhostButton>
-
-            {isOpen && (
-                <Modal
-                    isOpen
-                    id={id}
-                    style={customStyles}
-                    onRequestClose={() => setIsOpen(false)}
-                    ariaHideApp={false}
+        <Modal
+            isOpen={isOpen}
+            id={id ?? uuid}
+            style={customStyles}
+            onRequestClose={onClose}
+            ariaHideApp={false}
+        >
+            <div className="flex flex-col gap-6 relative">
+                <h3 className="text-modal-heading">{title}</h3>
+                <GhostButton
+                    onClick={onClose}
+                    className="absolute right-[-13px] top-[-15px]"
                 >
-                    <div className="flex flex-col gap-4 relative">
-                        <h3 className="text-modal-heading">{title}</h3>
-                        <GhostButton
-                            onClick={() => setIsOpen(false)}
-                            className="absolute right-0 top-0"
-                        >
-                            <Icons.X size={18} color="#4361ee" />
-                        </GhostButton>
+                    <Icons.X size={20} color="#4361ee" />
+                </GhostButton>
 
-                        {content}
-                    </div>
-                </Modal>
-            )}
-        </>
+                {content}
+            </div>
+        </Modal>
     );
 };
 

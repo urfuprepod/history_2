@@ -7,3 +7,5 @@ export { default as HamburgerMenu } from "./HamburgerMenu";
 export { default as GhostButton } from "./GhostButton";
 export { default as PointWithValue } from "./PointWithValue";
 export { default as Tooltip } from "./Tooltip";
+export { default as PrimaryButton } from "./PrimaryButton";
+export { default as LearningList } from "./LearningList";

@@ -1,14 +1,18 @@
-import React, { FC } from "react";
+import { FC } from "react";
 
 type Props = {
-    title: string;
+    title?: string;
     value: string;
 };
 
 const PointWithValue: FC<Props> = ({ title, value }) => {
     return (
-        <div className="flex gap-2 items-center">
-            <strong className="text-strong text-primary">{title}</strong>
+        <div>
+            {title && (
+                <strong className="text-strong text-primary leading-[1.5] float-left mr-2 inline-block">
+                    {title}:
+                </strong>
+            )}
             <span className="text-paragraph">{value}</span>
         </div>
     );
