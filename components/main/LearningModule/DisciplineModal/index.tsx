@@ -4,50 +4,40 @@ import { FC, useId } from "react";
 import { GhostButton } from "@/shared";
 import { Icons } from "@/shared/Icons";
 import Modal from "react-modal";
+import "./styles.css";
 
 type Props = {
     content: React.ReactNode;
     title: string;
     isOpen: boolean;
     onClose: () => void;
-    id?: string
+    id?: string;
 };
 
-const customStyles = {
-    content: {
-        top: "50%",
-        left: "50%",
-        right: "auto",
-        bottom: "auto",
-        marginRight: "-50%",
-        transform: "translate(-50%, -50%)",
-        maxWidth: "85vw",
-        zIndex: 334,
-        maxHeight: "88vh",
-        padding: "2rem",
-        minHeight: '20rem'
-    },
-    overlay: {
-        zIndex: 1000,
-    },
-};
-
-const DisciplineModal: FC<Props> = ({ title, content, onClose, isOpen, id }) => {
+const DisciplineModal: FC<Props> = ({
+    title,
+    content,
+    onClose,
+    isOpen,
+    id,
+}) => {
     const uuid = useId();
 
     return (
         <Modal
             isOpen={isOpen}
             id={id ?? uuid}
-            style={customStyles}
             onRequestClose={onClose}
             ariaHideApp={false}
+            className="discipline-modal"
+            overlayClassName="discipline-modal-overlay"
         >
-            <div className="flex flex-col gap-6 relative">
+            <div className="discipline-modal__inner">
                 <h3 className="text-modal-heading">{title}</h3>
+
                 <GhostButton
                     onClick={onClose}
-                    className="absolute right-[-13px] top-[-15px]"
+                    className="discipline-modal__close"
                 >
                     <Icons.X size={20} color="#4361ee" />
                 </GhostButton>
