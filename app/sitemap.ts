@@ -2,6 +2,9 @@ import { MetadataRoute } from "next";
 
 const BASE_URL = "https://worldhist-urfu.ru/";
 
+export const dynamic = 'force-static';
+
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
