@@ -9,5 +9,5 @@ export type Discipline = {
     title: string;
     icon: keyof typeof Icons;
     content?: React.ReactNode;
-    contents?: { title: string; config: React.ReactNode }[];
+    contents?: { title: string; config: React.ReactNode, prefix: string }[];
 };

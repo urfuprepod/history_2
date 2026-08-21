@@ -29,7 +29,7 @@ const DisciplineSemesters: FC<Props> = ({ contents }) => {
                         }
                         className="text-primary text-small duration-150 border-b-transparent border-b hover:border-b-primary "
                     >
-                        {id + 1}
+                        {el.prefix}
                     </GhostButton>
                 ))}
             </div>

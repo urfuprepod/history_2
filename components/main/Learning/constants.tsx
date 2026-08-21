@@ -232,9 +232,10 @@ export const MODULES: LearninModule[] = [
                 contents: [
                     {
                         title: "Учебная практика, научно-исследовательская работа (получение первичных навыков научно-исследовательской работы)",
+                        prefix: "АРХИВ",
                         config: (
                             <div key={"1"} className="flex flex-col gap-4">
-                                <PointWithValue title="Семестер" value="1" />
+                                <PointWithValue title="Семестр" value="1" />
                                 <PointWithValue
                                     title="Общий объем"
                                     value="324 часа / 9 зачётных единиц, 6 недель"
@@ -328,9 +329,10 @@ export const MODULES: LearninModule[] = [
 
                     {
                         title: "Учебная практика, проектная",
+                        prefix: "ПУБЛ",
                         config: (
                             <div key={"2"} className="flex flex-col gap-4">
-                                <PointWithValue title="Семестер" value="2" />
+                                <PointWithValue title="Семестр" value="2" />
                                 <PointWithValue
                                     title="Общий объем"
                                     value="216 / 6 зачётных единиц, 6 недель"
@@ -378,10 +380,11 @@ export const MODULES: LearninModule[] = [
 
                     {
                         title: "Производственная практика, научно-исследовательская работа (получение опыта профессиональной деятельности)",
+                        prefix: "ПРОФ",
                         config: (
                             <div key={"3"} className="flex flex-col gap-4">
                                 <PointWithValue
-                                    title="Семестер"
+                                    title="Семестр"
                                     value="2, 3, 4"
                                 />
                                 <PointWithValue
@@ -564,9 +567,10 @@ export const MODULES: LearninModule[] = [
 
                     {
                         title: "Производственная практика, преддипломная",
+                        prefix: "ДИСС",
                         config: (
                             <div key={""} className="flex flex-col gap-4">
-                                <PointWithValue title="Семестер" value="4" />
+                                <PointWithValue title="Семестр" value="4" />
                                 <PointWithValue
                                     title="Общий объем"
                                     value="648 часов / 30 зачётных единиц, 12 недель"
@@ -597,15 +601,12 @@ export const MODULES: LearninModule[] = [
                                             Отчетность
                                         </span>
                                         <li>
-                                            Полный текст магистерской диссертации
+                                            Полный текст магистерской
+                                            диссертации
                                         </li>
-                                        <li>
-                                            Презентация для защиты
-                                        </li>
+                                        <li>Презентация для защиты</li>
 
-                                        <li>
-                                            Отчёт о практике
-                                        </li>
+                                        <li>Отчёт о практике</li>
                                     </ol>
                                 </div>
                             </div>
