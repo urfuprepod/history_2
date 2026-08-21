@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: "*",
             allow: "/",
         },
-        sitemap: "https://worldhist-urfu.ru/sitemap.xml",
+        sitemap: "https://worldhistory-urfu.ru/sitemap.xml",
     };
 }

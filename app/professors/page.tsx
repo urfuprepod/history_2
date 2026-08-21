@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
     openGraph: {
         title: "Преподаватели магистерской программы",
-        url: "http://worldhist-urfu.ru/professors",
+        url: "http://worldhistory-urfu.ru/professors",
         description: "Преподаватели магистратуры &quot;Всеобщая история&quot;",
         type: "website",
     },

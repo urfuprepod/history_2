@@ -14,7 +14,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://worldhist-urfu.ru"), // 👈 вот главная магия
+    metadataBase: new URL("https://worldhistory-urfu.ru"), // 👈 вот главная магия
     title: {
         default: "Всемирная история в глобальном и региональном измерениях",
         template: "%s | Всемирная история",
