@@ -17,7 +17,7 @@ const DisciplineSemesters: FC<Props> = ({ contents }) => {
 
     return (
         <>
-            <div className="absolute flex flex-col gap-3 right-[15px] top-[12%]">
+            <div className="absolute grid grid-cols-2 right-[15px] bottom-[20px] justify-between gap-2 md:items-end md:justify-start md:flex md:flex-col md:gap-3 md:bottom-0  md:top-[12%]">
                 {contents.map((el, id) => (
                     <GhostButton
                         key={id}
