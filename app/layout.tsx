@@ -27,9 +27,28 @@ export const metadata: Metadata = {
         "Всемирная история",
         "Всемирная история в глобальном и региональном измерениях",
     ],
+    icons: {
+        icon: [
+            { url: "/favicon.ico", sizes: "any" },
+            { url: "/icon.png", type: "image/png", sizes: "32x32" },
+        ],
+        apple: "/apple-touch-icon.png",
+        shortcut: "/favicon.ico",
+    },
     openGraph: {
         title: "Всемирная история",
-        description: "Магистерская программа исторического факультета УГИ УрФУ",
+        description:
+            "Магистерская программа «Всемирная история в глобальном и региональном измерении» в УрФУ: мировая история, кросс-культурное взаимодействие народов и цивилизаций. 15 бюджетных мест, срок обучения — 2 года",
+        url: "https://worldhistory-urfu.ru",
+        siteName: "Всемирная история",
+        type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
     },
 };
 
