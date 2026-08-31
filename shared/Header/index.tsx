@@ -29,8 +29,12 @@ const Header = () => {
                         className={clsx(
                             "text-strong text-primary pbe-2 border-b-3 select-none",
                             {
-                                "border-b-primary": pathname === link,
-                                "border-b-transparent": pathname !== link,
+                                "border-b-primary":
+                                    pathname === link ||
+                                    pathname === link + "/",
+                                "border-b-transparent":
+                                    pathname !== link &&
+                                    pathname !== link + "/",
                             },
                         )}
                     >
